@@ -19,6 +19,7 @@ public class PayResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Customer getCustomer(@PathParam("id")int id) {
         return database.customers[id];
+
     }
 
     @GET
