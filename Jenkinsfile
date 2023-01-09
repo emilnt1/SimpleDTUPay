@@ -1,10 +1,12 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
     stages {
         stage('Test') {
             steps {
-                sh 'set -e'
-                sh 'mvn test'
+                sh '''
+                    set -e
+                    mvn test
+                '''
             }
         }
     }
