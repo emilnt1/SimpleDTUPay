@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                     set -e
+                    mvn package
                     docker-compose build
                 '''
             }
