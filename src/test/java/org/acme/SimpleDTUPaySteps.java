@@ -71,5 +71,30 @@ public class SimpleDTUPaySteps {
     public void anErrorMessageIsReturnedSaying(String errormessage) {
         assertEquals(errormessage, this.errormessage);
     }
+
+
+    @Given("a customer with a bank account with balance {int}")
+    public void aCustomerWithABankAccountWithBalance(int arg0) {
+    }
+
+    @And("that the customer is registered with DTU Pay")
+    public void thatTheCustomerIsRegisteredWithDTUPay() {
+    }
+
+    @Given("a merchant with a bank account with balance {int}")
+    public void aMerchantWithABankAccountWithBalance(int arg0) {
+    }
+
+    @And("that the merchant is registered with DTU Pay")
+    public void thatTheMerchantIsRegisteredWithDTUPay() {
+    }
+
+    @And("the balance of the customer at the bank is {int} kr")
+    public void theBalanceOfTheCustomerAtTheBankIsKr(int arg0) {
+    }
+
+    @And("the balance of the merchant at the bank is {int} kr")
+    public void theBalanceOfTheMerchantAtTheBankIsKr(int arg0) {
+    }
 }
 
