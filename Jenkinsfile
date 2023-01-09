@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                     mvn package
+                    docker-compose down
                     docker-compose build
                 '''
             }
@@ -20,6 +21,7 @@ pipeline {
         stage('Run Docker Compose'){
             steps {
                 sh '''
+
                     docker-compose up
                 '''
             }
