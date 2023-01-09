@@ -9,5 +9,21 @@ pipeline {
                 '''
             }
         }
+        stage('Build Docker Compose'){
+            steps {
+                sh '''
+                    set -e
+                    docker-compose build
+                '''
+            }
+        }
+        stage('Run Docker Compose'){
+            steps {
+                sh '''
+                    set -e
+                    docker-compose up -d
+                '''
+            }
+        }
     }
 }
