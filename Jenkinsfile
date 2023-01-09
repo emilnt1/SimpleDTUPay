@@ -12,7 +12,6 @@ pipeline {
         stage('Build Docker Compose'){
             steps {
                 sh '''
-                    set -e
                     mvn package
                     docker-compose build
                 '''
@@ -21,8 +20,7 @@ pipeline {
         stage('Run Docker Compose'){
             steps {
                 sh '''
-                    set -e
-                    docker-compose up -d
+                    docker-compose up
                 '''
             }
         }
