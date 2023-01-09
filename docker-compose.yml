@@ -3,6 +3,6 @@ services:
   simpledtupay:
     build: .
     image: dtupay
-    container_name: dtupaysystem
+    #container_name: dtupaysystem
     ports:
       - "8080:8080"
