@@ -5,4 +5,4 @@ services:
     image: dtupay
     #container_name: dtupaysystem
     ports:
-      - "10.135.0.17:8080:8080"
+      - "10.135.0.17:8181:8080"
