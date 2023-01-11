@@ -2,16 +2,15 @@ package org.acme;
 
 import lombok.Data;
 
-@Data
-public class Payment {
-    int customerId;
-    int merchantId;
-    int paymentAmount;
+import java.math.BigDecimal;
 
-    public Payment(int customerId, int merchantId, int paymentAmount) {
-        this.customerId = customerId;
-        this.merchantId = merchantId;
-        this.paymentAmount = paymentAmount;
-    }
+@Data
+public abstract class Payment{
+    String token;
+    BigDecimal amount;
+
+
+
+
 
 }

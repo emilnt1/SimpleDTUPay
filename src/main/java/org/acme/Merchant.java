@@ -7,9 +7,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Merchant {
-    int mid;
-    int dimmadollars;
+public class Merchant extends User {
+
+    public Merchant(String id, String firstName, String lastName, String cpr, String account) {
+        super(id, firstName, lastName, cpr, account);
+    }
 }

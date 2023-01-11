@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         , features = "features"  // directory of the feature files
         , snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class SimpleDTUPayTest {
+public class RegisterTest {
 }
