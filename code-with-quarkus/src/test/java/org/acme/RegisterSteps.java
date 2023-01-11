@@ -2,16 +2,12 @@ package org.acme;
 
 import controller.UserController;
 import dtu.ws.fastmoney.BankService;
-import dtu.ws.fastmoney.BankServiceException;
 import dtu.ws.fastmoney.BankServiceService;
 import dtu.ws.fastmoney.User;
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.acme.Customer;
-import org.junit.jupiter.api.Assertions;
 
 import java.math.BigDecimal;
 

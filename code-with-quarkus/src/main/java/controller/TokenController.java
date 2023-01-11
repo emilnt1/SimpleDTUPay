@@ -1,7 +1,5 @@
 package controller;
 
-import dtu.ws.fastmoney.User;
-import org.acme.Customer;
 import org.acme.Token;
 
 import java.util.List;

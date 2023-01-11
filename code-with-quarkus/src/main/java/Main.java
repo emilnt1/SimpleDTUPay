@@ -1,7 +1,5 @@
 import dtu.ws.fastmoney.*;
 
-import java.math.BigDecimal;
-
 public class Main {
     public static void main(String[] args) {
         BankService bank = new BankServiceService().getBankServicePort();
